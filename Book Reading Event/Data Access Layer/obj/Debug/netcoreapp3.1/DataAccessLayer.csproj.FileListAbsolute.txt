@@ -1,0 +1,16 @@
+C:\Users\amit04\source\repos\Book Reading Event\Data Access Layer\bin\Debug\netcoreapp3.1\DataAccessLayer.deps.json
+C:\Users\amit04\source\repos\Book Reading Event\Data Access Layer\bin\Debug\netcoreapp3.1\DataAccessLayer.runtimeconfig.json
+C:\Users\amit04\source\repos\Book Reading Event\Data Access Layer\bin\Debug\netcoreapp3.1\DataAccessLayer.runtimeconfig.dev.json
+C:\Users\amit04\source\repos\Book Reading Event\Data Access Layer\bin\Debug\netcoreapp3.1\DataAccessLayer.dll
+C:\Users\amit04\source\repos\Book Reading Event\Data Access Layer\bin\Debug\netcoreapp3.1\DataAccessLayer.pdb
+C:\Users\amit04\source\repos\Book Reading Event\Data Access Layer\bin\Debug\netcoreapp3.1\BusinessObjectLayer.dll
+C:\Users\amit04\source\repos\Book Reading Event\Data Access Layer\bin\Debug\netcoreapp3.1\BusinessObjectLayer.pdb
+C:\Users\amit04\source\repos\Book Reading Event\Data Access Layer\obj\Debug\netcoreapp3.1\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\amit04\source\repos\Book Reading Event\Data Access Layer\obj\Debug\netcoreapp3.1\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\amit04\source\repos\Book Reading Event\Data Access Layer\obj\Debug\netcoreapp3.1\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\amit04\source\repos\Book Reading Event\Data Access Layer\obj\Debug\netcoreapp3.1\DataAccessLayer.AssemblyInfo.cs
+C:\Users\amit04\source\repos\Book Reading Event\Data Access Layer\obj\Debug\netcoreapp3.1\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\amit04\source\repos\Book Reading Event\Data Access Layer\obj\Debug\netcoreapp3.1\DataAccessLayer.csproj.CopyComplete
+C:\Users\amit04\source\repos\Book Reading Event\Data Access Layer\obj\Debug\netcoreapp3.1\DataAccessLayer.dll
+C:\Users\amit04\source\repos\Book Reading Event\Data Access Layer\obj\Debug\netcoreapp3.1\DataAccessLayer.pdb
+C:\Users\amit04\source\repos\Book Reading Event\Data Access Layer\obj\Debug\netcoreapp3.1\DataAccessLayer.genruntimeconfig.cache

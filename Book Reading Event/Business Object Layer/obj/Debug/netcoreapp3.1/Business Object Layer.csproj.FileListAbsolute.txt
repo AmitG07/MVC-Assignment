@@ -1,0 +1,10 @@
+C:\Users\amit04\source\repos\Book Reading Event\Business Object Layer\bin\Debug\netcoreapp3.1\Business Object Layer.deps.json
+C:\Users\amit04\source\repos\Book Reading Event\Business Object Layer\bin\Debug\netcoreapp3.1\Business Object Layer.dll
+C:\Users\amit04\source\repos\Book Reading Event\Business Object Layer\bin\Debug\netcoreapp3.1\Business Object Layer.pdb
+C:\Users\amit04\source\repos\Book Reading Event\Business Object Layer\obj\Debug\netcoreapp3.1\Business Object Layer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\amit04\source\repos\Book Reading Event\Business Object Layer\obj\Debug\netcoreapp3.1\Business Object Layer.AssemblyInfoInputs.cache
+C:\Users\amit04\source\repos\Book Reading Event\Business Object Layer\obj\Debug\netcoreapp3.1\Business Object Layer.AssemblyInfo.cs
+C:\Users\amit04\source\repos\Book Reading Event\Business Object Layer\obj\Debug\netcoreapp3.1\Business Object Layer.csproj.CoreCompileInputs.cache
+C:\Users\amit04\source\repos\Book Reading Event\Business Object Layer\obj\Debug\netcoreapp3.1\Business Object Layer.dll
+C:\Users\amit04\source\repos\Book Reading Event\Business Object Layer\obj\Debug\netcoreapp3.1\Business Object Layer.pdb
+C:\Users\amit04\source\repos\Book Reading Event\Business Object Layer\obj\Debug\netcoreapp3.1\Business Object Layer.csproj.AssemblyReference.cache

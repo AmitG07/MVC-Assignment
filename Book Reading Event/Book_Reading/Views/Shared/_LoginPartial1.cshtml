@@ -1,0 +1,34 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<ApplicationUser> SignInManager
+
+<ul class="navbar-nav">
+    @if (SignInManager.IsSignedIn(User))
+    {
+        <li class="nav-item">
+            <a class="nav-link text-light" asp-area="" asp-controller="Event" asp-action="create">Create New Event</a>
+            @*<form class="form-inline" asp-area="Identity" asp-page="/Account/Manage/Index" method="post">*@
+
+            @*</form>*@
+        </li>
+        if (User.Identity.Name != "myadmin@bookreading.com")
+        {
+            <li class="nav-item">
+                <a class="nav-link text-light" asp-area="" asp-controller="Event" asp-action="myevent">My Event</a>
+            </li>
+        }
+
+        if (User.Identity.Name != "myadmin@bookreading.com")
+        {
+            <li class="nav-item">
+                <a class="nav-link text-light" asp-area="" asp-controller="Event" asp-action="eventsInvitedTo">Events InvitedTo</a>
+            </li>
+        }
+            
+        if (User.Identity.Name == "myadmin@bookreading.com")
+        {
+            <li class="nav-item">
+                <a class="nav-link text-light" asp-area="" asp-controller="Event" asp-action="allEvents">All Events</a>
+            </li>
+        }
+        }
+</ul>

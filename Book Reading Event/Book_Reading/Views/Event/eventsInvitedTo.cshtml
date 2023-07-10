@@ -1,0 +1,78 @@
+﻿@using Microsoft.AspNetCore.Identity
+
+@model IEnumerable<Book_Reading.Models.CreateModel>
+
+@{
+    ViewData["Title"] = "eventsInvitedTo";
+}
+
+<style>
+    h1 {
+        color: rgb(255, 165, 0);
+    }
+</style>
+
+<div class="container">
+    <div class="row">
+        <div class="col-8 offset-2" >
+            <h1 class="text-center">Event record</h1>
+            <table class="table table-bordered">
+                <tr class="text-center">
+                    <th>Title</th>
+                    <th>Date</th>
+                    <th>Location</th>
+                    <th>StartTime</th>
+                    <th>Type</th>
+                    <th>Duration</th>
+                    <th>Description</th>
+                    <th>Others</th>
+                </tr>
+                @foreach (var d in Model)
+                {
+                    string str = d.InviteByEmail;
+                    string tempStr = "";
+                    bool check = false;
+
+                    for (int i = 0; i < str.Length; i++)
+                    {
+                        if (str[i] == ',')
+                        {
+                            if (@User.Identity.Name == tempStr)
+                            {
+                                check = true;
+                                break;
+                            }
+                            tempStr = "";
+                        }
+
+                        else
+                        {
+                            tempStr = tempStr + str[i];
+                        }
+                    }
+
+                    if (@User.Identity.Name == tempStr)
+                    {
+                        check = true;
+                    }
+
+                    tempStr = "";
+
+                    if (check)
+                    {
+                        <tr class="text-center">
+                            <td><a href="@Url.Action("Details", new { Id = d.EventId })">@d.Title</a></td>
+                            <td>@d.Date</td>
+                            <td>@d.Location</td>
+                            <td>@d.StartTime.TimeOfDay</td>
+                            <td>@d.Type</td>
+                            <td>@d.DurationInHours</td>
+                            <td>@d.Description</td>
+                            <td>@d.OtherDetails</td>
+                        </tr>
+                    }
+                }
+            </table>
+        </div>
+    </div>
+</div>

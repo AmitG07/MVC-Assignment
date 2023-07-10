@@ -1,0 +1,73 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+@model EventsViewModel
+
+<div class="container">
+    <div class="row">
+        <div class="col-5">
+            <h2 class="text-center">Past Events</h2>
+            <table class="table table-bordered">
+                <tr class="text-center">
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Start Date & Time</th>
+                </tr>
+                @foreach (var e in Model.PastEvents)
+                {
+                    @if (e.Type == "Public" || e.MailId == User.Identity.Name || User.Identity.Name == "myadmin@bookreading.com")
+                    {
+                        <tr class="text-center">
+                            <td>
+                                @if (e.Type == "Public" || User.Identity.Name == "myadmin@bookreading.com")
+                                {
+                                    <a href="@Url.Action("Details", new { Id = e.EventId })">@e.Title</a> }
+                                else
+                                {
+                                    @e.Title
+                                }
+                            </td>
+                            <td>@e.Description</td>
+                            <td>@e.Date.ToShortDateString() @e.StartTime.ToString(@"hh\:mm")</td>
+                        </tr>
+                    }
+                }
+            </table>
+        </div>
+
+        <div class="col-5 offset-2">
+            <h2 class="text-center">Upcoming Events</h2>
+            <table class="table table-bordered">
+                <tr class="text-center">
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Start Date & Time</th>
+                </tr>
+                @foreach (var e in Model.FutureEvents)
+                {
+                    @if (e.Type == "Public" || e.MailId == User.Identity.Name)
+                    {
+                        <tr class="text-center">
+                            <td>
+                                @if (e.Type == "Public")
+                                {
+                                    <a href="@Url.Action("Details", new { Id = e.EventId })">@e.Title</a> }
+                                else
+                                {
+                                    @e.Title
+                                }
+                            </td>
+                            <td>@e.Description</td>
+                            <td>@e.Date.ToShortDateString() @e.StartTime.ToString(@"hh\:mm")</td>
+                        </tr>
+                    }
+                }
+            </table>
+        </div>
+    </div>
+</div>

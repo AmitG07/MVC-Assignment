@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Book_Reading.Models.CreateModel>
+@{
+    ViewData["Title"] = "allEvents";
+}
+
+<style>
+    h1 {
+        color: rgb(255, 165, 0);
+    }
+</style>
+
+<div class="container">
+    <div class="row">
+        <div class="col-8 offset-2">
+            <h1 class="text-center">Event record</h1>
+            <table class="table table-bordered">
+                <tr class="text-center">
+                    <th>Title</th>
+                    <th>Date</th>
+                    <th>Location</th>
+                    <th>StartTime</th>
+                    <th>Type</th>
+                    <th>Duration</th>
+                    <th>Description</th>
+                    <th>Others</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+                @foreach (var d in Model)
+                {
+                    <tr class="text-center">
+                        <td>@d.Title</td>
+                        <td>@d.Date</td>
+                        <td>@d.Location</td>
+                        <td>@d.StartTime.ToString(@"hh\:mm")</td>
+                        <td>@d.Type</td>
+                        <td>@d.DurationInHours</td>
+                        <td>@d.Description</td>
+                        <td>@d.OtherDetails</td>
+                        <td>
+                            <a class="btn btn-sm btn-warning" asp-controller="Event" asp-action="Edit" asp-route-id="@d.EventId">Edit</a>
+                        </td>
+                        <td>
+                            <a class="btn btn-sm btn-danger" asp-controller="Event" asp-action="Delete" asp-route-id="@d.EventId">delete</a>
+                        </td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+</div>
